@@ -1,0 +1,221 @@
+.big-heading {
+  font-size: clamp(40px, 8vw, 80px);
+  margin: 0;
+  padding: 0;
+}
+
+.white {
+  color: #ffffff;
+}
+.grey {
+  color: #8892b0;
+}
+body {
+  background-color: #18202d;
+}
+.homepage {
+  padding: 0 5%;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 70vh;
+}
+.intro-text {
+  color: #68e8c5;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem 0.2rem;
+}
+.intro-p {
+  color: #8892b0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem 0.2rem;
+}
+
+.section-headings h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: center;
+  align-items: center;
+}
+.section-headings h3::before {
+  counter-increment: item;
+  content: "0" counter(item) ".";
+  margin-right: 5px;
+  font-size: 1.6rem;
+  text-align: right;
+  color: #88ffdf;
+}
+.section-headings h4::before {
+  margin-right: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: right;
+  color: #88ffdf;
+}
+
+.section-headings h4 {
+  font-size: 1.6rem;
+  color: #88ffdf;
+  font-weight: 300;
+}
+
+.section-headings h3::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #ffffff;
+}
+
+.about-p {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.worked-at .img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: contain;
+  background-color: #232e40;
+  box-shadow: 0px 0px 30px -3px rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+a {
+  color: #68e8c5;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #68e8c5;
+  transition: all 2s ease-out;
+}
+.stack-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.skills-list li {
+  list-style-type: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.skills-list li::before {
+  content: "▹";
+  margin-right: 6%;
+  color: #88ffdf;
+  font-size: 1rem;
+  line-height: 12px;
+}
+
+.btn-large {
+  padding: 20px 20px !important;
+}
+
+.left-sticky {
+  position: fixed;
+  top: 60%;
+  left: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-sticky a {
+  height: 25px;
+  width: 25px;
+  background-color: #8892b0;
+  margin-top: 2rem;
+}
+.left-sticky a:hover {
+  color: #68e8c5;
+  transition: all 2s ease-in-out;
+}
+.left-sticky a.github-icon {
+  mask: url("../assets/icons/github-brands.svg") no-repeat center;
+}
+.left-sticky a.linkedin-icon {
+  mask: url("../assets/icons/linkedin-brands.svg") no-repeat center;
+}
+.left-sticky a.gmail-icon {
+  mask: url("../assets/icons/google-plus-brands.svg") no-repeat center;
+}
+
+.left-sticky .line,
+.right-sticky .line {
+  height: 300px;
+  width: 2px;
+  background-color: #8892b0;
+  margin-top: 20px;
+}
+
+.right-sticky {
+  position: fixed;
+  top: 60%;
+  right: -2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-sticky a {
+  transform: rotate(90deg);
+  color: #ffffff;
+  font-size: 1.5rem !important;
+  margin-top: 2rem;
+}
+.right-sticky a:hover {
+  color: #68e8c5;
+  transition: all 2s ease-in-out;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #68e8c5 !important;
+}
+.css-10d9dml-MuiTabs-indicator {
+  background-color: #68e8c5 !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  color: #8892b0 !important;
+  align-items: right !important;
+}
+.css-35zqo5-MuiTabs-root {
+  border-right: 1px solid !important;
+  border-color: rgb(92 202 174 / 12%) !important;
+}
+.tab-heading {
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  color: #ffffff;
+}
+.tab-heading span {
+  color: #68e8c5;
+}
+.tab-sub-heading {
+  color: #8892b0;
+  font-size: 1rem !important;
+  font-weight: normal !important;
+}
+@media screen and (max-width: 768px) {
+  .left-sticky,
+  .right-sticky {
+    display: none;
+  }
+}
